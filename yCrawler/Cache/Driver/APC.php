@@ -20,7 +20,7 @@ class Cache_Driver_APC implements Cache_Interface {
      * @param Integer $ttl (opcional) Tiempo (en segundos) que perdurarán los datos en APC-Cache, por defecto, no caducan
      * @return Boolean Si se pudo guardar en APC-Cache
      */
-	public function set($key, $data, $ttl = 0) {
+	public function set($key, $data, $ttl = 3600) {
 		$content = array(
 			'time' => time(),
 			'ttl' => $ttl,			

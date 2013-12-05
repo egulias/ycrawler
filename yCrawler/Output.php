@@ -2,11 +2,14 @@
 namespace yCrawler;
 
 class Output {
-    const INFO = 20;
-    const DEBUG = 10;
 
-    const NOTICE = 31;
+    const EXTRA = 1;
+
+    const DEBUG = 10;
+    const INFO = 20;
+
     const WARNING = 30;
+    const NOTICE = 31;
     const ERROR = 40;
     const EXCEPTION = 50; 
     const CUSTOM = 60; 
